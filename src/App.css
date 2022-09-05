@@ -3,13 +3,14 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html{
   font-size: 62.5%;
 }
 :root{
   --primary-color:#7065EF;
-  --bg-color:#F8F7FD;
+  --bg-color:#f8f7fde5;
   --logo-color:#150e80;
   --secondary-color:rgb(22, 22, 22);
 
@@ -30,6 +31,13 @@ body{
   gap: 3rem;
   list-style: none;
 }
-.h{
-  box-shadow: 0px 0px 10px 0px rgba(165, 165, 165, 0.205);
+.selector{
+  border: 1px solid #d8d7e6;
+  padding: .7rem 1rem;
+  border-radius: .4rem;
+}
+
+.selector:focus{
+  outline: none;
+  border: 1px solid var(--primary-color);
 }

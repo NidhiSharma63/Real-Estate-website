@@ -53,16 +53,12 @@ const Header = () => {
         display='flex'
         justifyContent='space-between'
         alignItems='center'
-        gap='1rem'>
+        gap='2rem'>
           <ThemeProvider theme={NavBtnTypo}>
-            <Button
-            >
-              login
+            <Button>login
             </Button>
            <ThemeProvider theme={NavBtnTypo2}>
-            <Button>
-              sign up
-            </Button>
+            <Button>sign up</Button>
            </ThemeProvider>
           </ThemeProvider>
         </Box>
