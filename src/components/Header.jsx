@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import NavButton from './NavButton';
+
+import logo from '../Images/logo.png';
 import { 
   Box,
   Typography,
@@ -52,7 +54,15 @@ const Header = () => {
         width:{lg:'90%',md:'95%'}
       }}
       >
-        <Box>
+        <Box
+        display='flex'
+        alignItems='center'
+        gap='1rem'>
+          <Box
+          component='img'
+          src={logo}
+          alt='logo'
+          width='3rem'/>
           <ThemeProvider theme={LogoTypo}>
             <Typography>Estatery</Typography>
           </ThemeProvider>
@@ -64,7 +74,7 @@ const Header = () => {
         gap='3rem'
         className='nav-menu'
         sx={{
-          marginRight:{lg:'30rem',md:'10rem'}
+          marginRight:{lg:'20rem',md:'6rem'}
         }}>
           <ul className='nav-links'>
             <li className='nav-link-active'>rent</li>

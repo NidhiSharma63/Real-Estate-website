@@ -60,13 +60,6 @@ const MainWrapper = () => {
         <ThemeProvider theme={headingTypo}>
           <Typography variant='h1'>Search properties for rent</Typography>
         </ThemeProvider>
-        <select name="cars" className='filter-search-bar'>
-          <option value="" disabled={true}>Search with Search Bar</option>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
         </Box>
       {/* top-section end */}
         <Filter setSearchData={setSearchData}/>

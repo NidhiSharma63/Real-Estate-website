@@ -108,7 +108,7 @@ form select:focus{
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width:760px) {
+@media screen and (max-width:800px) {
   .nav-menu{
     display: none !important;
   }
