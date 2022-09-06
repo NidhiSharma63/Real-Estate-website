@@ -40,6 +40,12 @@ body{
   text-transform: capitalize;
 }
 
+.nav-link-active{
+  background-color: rgba(133, 164, 211, 0.301);
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+
 .show-mobile-nav{
   transition: all 10s;
   transform: translateY(0%) !important;

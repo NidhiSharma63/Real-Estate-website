@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import NavButton from './NavButton';
@@ -9,13 +9,25 @@ import {
 } from '@mui/material';
 
 import { 
-  NavTypo,
   LogoTypo,
 } from '../MaterialUI/typography';
 
 import MobileNav from './MobileNav';
 
 const Header = () => {
+
+  useEffect(()=>{
+    const links = document.querySelectorAll('.nav-links li')
+    console.log(links)
+    links.forEach((li)=>{
+      li.addEventListener('click',(e)=>{
+        links.forEach((li)=>{
+          li.classList.remove('nav-link-active')
+        })
+        e.target.classList.add('nav-link-active')
+      })
+    })
+  },[])
 
   const [mobileNavOpen,setMobileNavOpen] = useState(false)
   return (
@@ -55,7 +67,7 @@ const Header = () => {
           marginRight:{lg:'30rem',md:'10rem'}
         }}>
           <ul className='nav-links'>
-            <li>rent</li>
+            <li className='nav-link-active'>rent</li>
             <li>buy</li>
             <li>sell</li>
             <li>manage property</li>
