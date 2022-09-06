@@ -46,7 +46,7 @@ const House = ({data}) => {
         width='100%'
         sx={{
           height:{sm:'200px',xs:'250px',},
-          objectFit:'contain'
+          objectFit:'cover'
         }}
         alt='image'
         boxShadow='0px 0px 10px 0px rgb(216, 216, 216)'

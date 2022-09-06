@@ -17,9 +17,9 @@ import {
 
 const Filter = ({setSearchData}) => {
 
-  const [location,setLocation] = useState('new york,USA');
-  const [priceRange,setPriceRange] = useState('500-1000');
-  const [propertType,setPropertType] = useState('flat');
+  const [location,setLocation] = useState('All');
+  const [priceRange,setPriceRange] = useState('All');
+  const [propertType,setPropertType] = useState('All');
   const [date,setDate] = useState(new Date());
 
   const [showCalender,setShowCalender] = useState(false);
@@ -76,6 +76,7 @@ const Filter = ({setSearchData}) => {
       <Box className='filter-box'>
         <label htmlFor="location">Location</label>
           <select name="location" id="location" onChange={getLocation}>
+            <option value="All">All</option>
             <option value="new york,USA">new york,USA</option>
             <option value="paris,france">paris,France</option>
           </select>
@@ -111,6 +112,7 @@ const Filter = ({setSearchData}) => {
       className='filter-box'>
         <label htmlFor="price">price</label>
         <select name="price" id="price" onChange={getPrice}>
+          <option value="All">All</option>
           <option value="500-1000">$500-1000</option>
           <option value="1000-1500">$1000-1500</option>
           <option value="1500-2000">$1500-2000</option>
@@ -121,6 +123,7 @@ const Filter = ({setSearchData}) => {
       className='filter-box'>
         <label htmlFor="property">property type</label>
         <select name="property" id="property" onChange={getPropertyType}>
+          <option value="All">All</option>
           <option value="flat">flat</option>
           <option value="appartment">Appartment</option>
         </select>

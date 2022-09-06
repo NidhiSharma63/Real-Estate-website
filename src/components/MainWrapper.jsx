@@ -27,14 +27,61 @@ const MainWrapper = () => {
   useEffect(()=>{
     if(Object.keys(searchData).length<1) return;
     console.log(searchData)
+    
     setShowData(()=>(
-      data.filter((item)=>(
-        item.priceRange===searchData.priceRange &&
-        item.type===searchData.propertyType &&
-        item.Location===searchData.location
-      ))
+      data.filter((item)=>{
+        if(searchData.priceRange==='All' &&
+        searchData.propertyType==='All' &&
+        searchData.location==='All'){
+          return data;
+        }
+        if(searchData.priceRange!=='All' &&
+          searchData.propertyType==='All' &&
+          searchData.location==='All'){
+          return (item.priceRange===searchData.priceRange)
+        }
+        if(searchData.propertyType!=='All' &&
+          searchData.priceRange==='All' &&
+          searchData.location==='All'){
+            console.log('property typ only have value')
+          return (item.type===searchData.propertyType)
+        }
+        if(searchData.location!=='All' &&
+          searchData.priceRange==='All' &&
+          searchData.propertyType==='All'){
+          return (item.Location===searchData.location)
+        }
+        // 
+        if(searchData.priceRange!=='All' &&
+          searchData.location==='All' &&
+          searchData.propertyType!=='All'){
+          return (item.priceRange===searchData.priceRange &&
+            item.type===searchData.propertyType)
+        }
+        if(searchData.propertyType!=='All' &&
+          searchData.priceRange==='All' &&
+          searchData.location!=='All'){
+          return (item.type===searchData.propertyType &&
+          item.Location===searchData.location)
+        }
+        if(searchData.location!=='All' &&
+          searchData.priceRange!=='All' &&
+          searchData.propertyType==='All'){
+          return (item.Location===searchData.location &&
+            item.priceRange===searchData.priceRange)
+        }
+        // 
+        if(searchData.priceRange!='All' && 
+          searchData.location!='All' &&
+          searchData.propertyType!='All'){
+          return( item.priceRange===searchData.priceRange &&
+          item.type===searchData.propertyType &&
+          item.Location===searchData.location);
+       }
+      })
     ));
 
+    console.log(showData)
   },[searchData]);
   
   return (
