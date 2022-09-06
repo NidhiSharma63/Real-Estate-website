@@ -23,7 +23,7 @@ const House = () => {
     width='320px'
     borderRadius='.4rem'
     overflow='hidden'
-    box-shadow='0px 0px 10px 0px rgb(216, 216, 216)'>
+    boxShadow='0px 0px 10px 0px rgb(216, 216, 216)'>
       {/* // */}
         <Box 
         component='img'

@@ -24,6 +24,8 @@ const MainWrapper = () => {
     mt="13rem"
     width='90%'
     gap='3rem'
+    position='relative'
+    zIndex='1'
     >
       <Box
         display='flex'

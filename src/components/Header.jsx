@@ -20,6 +20,8 @@ const Header = () => {
     width='100%'
     position='fixed'
     boxShadow='0px 0px 13px 0px rgb(165 165 165 / 21%)'
+    zIndex='2'
+    backgroundColor='white'
     >
       <Box
       width='90%'
