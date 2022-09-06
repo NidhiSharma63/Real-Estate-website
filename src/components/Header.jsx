@@ -19,8 +19,7 @@ import MobileNav from './MobileNav';
 const Header = () => {
 
   useEffect(()=>{
-    const links = document.querySelectorAll('.nav-links li')
-    console.log(links)
+    const links = document.querySelectorAll('.nav-links li');
     links.forEach((li)=>{
       li.addEventListener('click',(e)=>{
         links.forEach((li)=>{

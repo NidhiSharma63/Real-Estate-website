@@ -45,9 +45,9 @@ const House = ({data}) => {
         src={item.houseImg}
         width='100%'
         sx={{
-          height:{sm:'200px',xs:'250px',}
+          height:{sm:'200px',xs:'250px',},
+          objectFit:'contain'
         }}
-        objectFit='contain'
         alt='image'
         boxShadow='0px 0px 10px 0px rgb(216, 216, 216)'
         />
