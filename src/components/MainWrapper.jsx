@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Box,
   Typography,
@@ -8,16 +8,17 @@ import {
 
 import Filter from './Filter';
 import House from './House';
-
-import { estateData } from '../data';
+import data from '../data.json';
 
 import {
   headingTypo,
 } from '../MaterialUI/typography';
 
-import data from '../data.json'
 
 const MainWrapper = () => {
+
+  const [getSearchData,setSearchData] = useState({});
+
   return (
     <Box
     display='flex'

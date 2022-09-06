@@ -1,5 +1,4 @@
-import React from 'react';
-import house from '../images/house.avif';
+import React, { useState } from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SingleBedIcon from '@mui/icons-material/SingleBed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
@@ -18,12 +17,24 @@ import {
 const IconsArray = [SingleBedIcon,BathtubIcon,CompareArrowsIcon]
 
 const House = ({data}) => {
+
+  const changeFavIconColor = (e) =>{
+    if(e.target.style.color==='var(--text-color)'){
+      e.target.style.color='var(--primary-color)';
+      return;
+    }
+    if(e.target.style.color==='var(--primary-color)'){
+      e.target.style.color='var(--text-color)';
+      return;
+    }
+  }
+
   return (
     data.map((item,i)=>(
     <Box
     key={i}
     sx={{
-      width:{lg:'320px',md:'280px',xs:'350px'}
+      width:{lg:'320px',md:'280px',xs:'300px'}
     }}
     borderRadius='.4rem'
     overflow='hidden'
@@ -56,7 +67,7 @@ const House = ({data}) => {
           flexDirection='column'
           gap='.6rem'>
             <ThemeProvider theme={HouseTextTypo}>
-              <Typography color='var(--primary-color)'>{item.price}
+              <Typography color='var(--primary-color)'>${item.price}
                 <Box 
                 component='span'
                 fontSize='1rem'
@@ -78,7 +89,10 @@ const House = ({data}) => {
               padding:'.7rem',
               border:'1px solid var(--text-color)',
               cursor:'pointer'
-            }}/>
+            }}
+            style={{color:'var(--text-color)'}}
+            onClick={(e)=>changeFavIconColor(e)}
+            />
           </Box>
         </Box>
         <Box
