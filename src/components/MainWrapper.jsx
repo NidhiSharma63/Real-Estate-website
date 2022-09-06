@@ -15,6 +15,8 @@ import {
   headingTypo,
 } from '../MaterialUI/typography';
 
+import data from '../data.json'
+
 const MainWrapper = () => {
   return (
     <Box
@@ -55,7 +57,7 @@ const MainWrapper = () => {
       gap='7rem'
       mt='5rem'
       justifyContent='center'>
-        <House/>
+        <House data={data}/>
       </Box>
     </Box>
   )

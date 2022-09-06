@@ -14,13 +14,13 @@ import {
 import {
   HouseTextTypo,
 } from '../MaterialUI/typography';
-import { estateData } from '../data';
+// import { estateData } from '../data';
 
 const IconsArray = [SingleBedIcon,BathtubIcon,CompareArrowsIcon]
 
-const House = () => {
+const House = ({data}) => {
   return (
-    estateData.map((item,i)=>(
+    data.map((item,i)=>(
     <Box
     key={i}
     width='320px'
