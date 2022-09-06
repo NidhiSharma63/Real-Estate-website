@@ -26,7 +26,7 @@ const MainWrapper = () => {
 
   useEffect(()=>{
     if(Object.keys(searchData).length<1) return;
-
+    console.log(searchData)
     setShowData(()=>(
       data.filter((item)=>(
         item.priceRange===searchData.priceRange &&
