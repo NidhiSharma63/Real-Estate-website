@@ -34,6 +34,7 @@ const House = () => {
         width='100%'
         height='200px'
         objectFit='contain'
+        alt='image'
         />
       {/* // */}
       <Box

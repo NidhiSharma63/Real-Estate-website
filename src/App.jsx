@@ -7,7 +7,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <Box maxWidth='1440px' m='auto' position='relative' border='1px solid'>
+    <Box maxWidth='1440px' m='auto' position='relative'>
       <Header/>
       <MainWrapper/>
     </Box>
