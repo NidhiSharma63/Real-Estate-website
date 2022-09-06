@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Calendar from 'react-calendar'
-
+import Calendar from 'react-calendar';
+import '../css/calendar.css';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { 
   Box,
   Typography,
@@ -19,7 +20,12 @@ const Filter = ({setSearchData}) => {
   const [location,setLocation] = useState('new york,USA');
   const [priceRange,setPriceRange] = useState('500-1000');
   const [propertType,setPropertType] = useState('flat');
+  const [date,setDate] = useState(new Date());
 
+  const [showCalender,setShowCalender] = useState(false);
+
+
+  console.log(date.toString().substring(0,15))
   const getPrice = (e)=>{
     setPriceRange(e.target.value)
   }
@@ -29,7 +35,13 @@ const Filter = ({setSearchData}) => {
   const getLocation = (e) =>{
     setLocation(e.target.value)
   }
-
+  const getDate = (date) =>{
+    console.log(date.toString().substring(0,15))
+    setDate(date);
+  }
+  const handleDisplayCalendar = () =>{
+    setShowCalender((prev)=>!prev)
+  }
   const handleData = (e) =>{
     e.preventDefault();
     setSearchData({
@@ -62,10 +74,24 @@ const Filter = ({setSearchData}) => {
         <label/>
       </Box>
       <Box
-      className='filter-box'>
+      className='filter-box'
+      position='relative'
+      gap='0rem'>
       <ThemeProvider theme={filterTextTypo}>
         <Typography>when</Typography>
-        <Typography color='var(--secondary-color)'>select move-in date</Typography>
+        <Box display='flex'>
+          <Typography color='var(--secondary-color)'>{date.toString().substring(0,15)}</Typography>
+          <ArrowDropDownIcon
+          onClick={handleDisplayCalendar}
+          sx={{mt:'-3rem',fontSize:'3rem',alignSelf:'end',cursor:'pointer'}}
+          />
+        </Box>
+        {
+          showCalender &&
+          <Calendar
+          onChange={getDate}
+          value={date}/>
+        }
       </ThemeProvider>
       </Box>
       {/* // */}

@@ -27,7 +27,7 @@ const MainWrapper = () => {
 
   useEffect(()=>{
     if(Object.keys(searchData).length<1) return;
-    
+
     setShowData(()=>(
       data.filter((item)=>(
         item.priceRange===searchData.priceRange &&
@@ -79,7 +79,6 @@ const MainWrapper = () => {
       }}
       mt='5rem'
       justifyContent='center'>
-        {/* {showData && console.log(showData.length)} */}
        {<House data={showData}/>}
       </Box>
     </Box>

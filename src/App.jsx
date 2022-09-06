@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 
 import Header from './components/Header';
 import MainWrapper from './components/MainWrapper';
-import './App.css'
+import './css/App.css'
 
 const App = () => {
   return (
