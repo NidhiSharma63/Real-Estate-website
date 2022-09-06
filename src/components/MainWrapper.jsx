@@ -74,6 +74,7 @@ const MainWrapper = () => {
         if(searchData.priceRange!='All' && 
           searchData.location!='All' &&
           searchData.propertyType!='All'){
+            console.log(searchData)
           return( item.priceRange===searchData.priceRange &&
           item.type===searchData.propertyType &&
           item.Location===searchData.location);
