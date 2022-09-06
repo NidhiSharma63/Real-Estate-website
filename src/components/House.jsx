@@ -14,12 +14,15 @@ import {
 import {
   HouseTextTypo,
 } from '../MaterialUI/typography';
+import { estateData } from '../data';
 
 const IconsArray = [SingleBedIcon,BathtubIcon,CompareArrowsIcon]
 
 const House = () => {
   return (
+    estateData.map((item,i)=>(
     <Box
+    key={i}
     width='320px'
     borderRadius='.4rem'
     overflow='hidden'
@@ -27,8 +30,9 @@ const House = () => {
       {/* // */}
         <Box 
         component='img'
-        src={house}
+        src={item.houseImg}
         width='100%'
+        height='200px'
         objectFit='contain'
         />
       {/* // */}
@@ -47,7 +51,7 @@ const House = () => {
           flexDirection='column'
           gap='.6rem'>
             <ThemeProvider theme={HouseTextTypo}>
-              <Typography color='var(--primary-color)'>$2095
+              <Typography color='var(--primary-color)'>{item.price}
                 <Box 
                 component='span'
                 fontSize='1rem'
@@ -59,7 +63,7 @@ const House = () => {
                 fontSize='2.3rem'>
                 palm harbor
               </Typography>
-              <Typography fontSize='1.3rem' color='var(--text-color)'>Lorem ipsum dolor sit</Typography>
+              <Typography fontSize='1.3rem' color='var(--text-color)'>{item.desc}</Typography>
             </ThemeProvider>
           </Box>
           <Box>
@@ -75,24 +79,42 @@ const House = () => {
         <Box
         display='flex'
         justifyContent='space-between'>
-          {
-            IconsArray.map((Icon,i)=>(
-              <Box
-              display='flex'
-              gap='.6rem'
-              key={i}
-              color='var(--text-color)'>
-                <ThemeProvider theme={HouseTextTypo}>
-                <Icon sx={{fontSize:'2rem'}}/> 
-                  <Typography fontSize='1.2rem' color='var(--text-color)'>2beds</Typography>
-                </ThemeProvider>
-              </Box>
-            ))
-          }
+            {
+              IconsArray.map((Icon,i)=>(
+                <Box
+                display='flex'
+                gap='.6rem'
+                key={i}
+                color='var(--text-color)'>
+                  <ThemeProvider theme={HouseTextTypo}>
+                    <Icon sx={{fontSize:'2rem'}}/> 
+                    <Typography fontSize='1.2rem' color='var(--text-color)'>{item.info[i]}</Typography>
+                  </ThemeProvider>
+                </Box>
+              ))
+            }
         </Box>
       </Box>
     </Box>
+    ))
   )
 }
 
 export default House;
+
+
+// {
+//   IconsArray.map((Icon,i)=>(
+//     // console.log(item.info[i])
+//     <Box
+//     display='flex'
+//     gap='.6rem'
+//     key={i}
+//     color='var(--text-color)'>
+//       <ThemeProvider theme={HouseTextTypo}>
+//       <Icon sx={{fontSize:'2rem'}}/> 
+//         <Typography fontSize='1.2rem' color='var(--text-color)'>{item.info[i]}</Typography>
+//       </ThemeProvider>
+//     </Box>
+//   ))
+// }

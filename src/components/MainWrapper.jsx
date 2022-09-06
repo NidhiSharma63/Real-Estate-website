@@ -9,6 +9,8 @@ import {
 import Filter from './Filter';
 import House from './House';
 
+import { estateData } from '../data';
+
 import {
   headingTypo,
 } from '../MaterialUI/typography';
@@ -45,8 +47,16 @@ const MainWrapper = () => {
         </select>
         </Box>
       {/* top-section end */}
-      <Filter/>
-      <House/>
+        <Filter/>
+      {/* filter section end */}
+      <Box
+      display='flex'
+      flexWrap='wrap'
+      gap='7rem'
+      mt='5rem'
+      justifyContent='center'>
+        <House/>
+      </Box>
     </Box>
   )
 }
