@@ -22,6 +22,7 @@ html{
 body{
   background-color: var(--bg-color);
   margin-bottom: 2rem;
+  overflow-x: hidden;
 }
 .nav-links{
   font-size: 1.7rem;
@@ -33,13 +34,23 @@ body{
   gap: 3rem;
   list-style: none;
 }
-.selector{
+
+.nav-links li{
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.show-mobile-nav{
+  transition: all 10s;
+  transform: translateY(0%) !important;
+}
+.filter-search-bar{
   border: 1px solid #d8d7e6;
   padding: .7rem 1rem;
   border-radius: .4rem;
 }
 
-.selector:focus{
+.filter-search-bar:focus{
   outline: none;
   border: 1px solid var(--primary-color);
 }
@@ -48,8 +59,8 @@ form {
   width: fit-content;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-between;
+  width: 75%;
 }
 
 form label,
@@ -65,4 +76,55 @@ form select{
   border: none;
   background-color: transparent;
   color: var(--secondary-color);
+}
+
+.filter-box{
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding-right: 2rem;
+  border-right: 2px solid var(--text-color);
+  height: 5rem;
+}
+
+@media screen and (max-width:1080px) {
+  html{
+    font-size: 60.6%;
+  }
+}
+@media screen and (max-width:900px) {
+  form label,
+  form select{
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width:760px) {
+  .nav-menu{
+    display: none !important;
+  }
+  .menu-icon{
+    display: flex !important;
+  }
+  .nav-links{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:600px) {
+  form{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.8rem;
+    width: 90%;
+    margin: auto;
+  }
+  .filter-search-bar{
+    width: 12rem;
+  }
+  .filter-box{
+    padding: 0rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+  }
+  
 }

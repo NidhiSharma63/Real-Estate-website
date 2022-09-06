@@ -78,6 +78,13 @@ export const headingTypo = createTheme({
           letterSpacing: '1px',
           fontSize: '3.4rem',
           color: 'var(--secondary-color)',
+
+          "@media screen and (max-width:800px)": {
+            fontSize:'3rem'
+          },
+          "@media screen and (max-width:600px)": {
+            fontSize:'1.8rem'
+          }
         }
       }
     }
@@ -93,7 +100,11 @@ export const filterTextTypo = createTheme({
           fontWeight: '600',
           fontSize: '1.8rem',
           color: 'rgba(58, 58, 57, 0.644)',
-          textTransform:''
+          textTransform:'capitalize',
+
+          "@media screen and (max-width:900px)": {
+            fontSize:'1.4rem'
+          }
         }
       }
     }

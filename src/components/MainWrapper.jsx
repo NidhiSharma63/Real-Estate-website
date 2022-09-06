@@ -26,22 +26,22 @@ const MainWrapper = () => {
     flexDirection='column'
     m='auto' 
     mt="13rem"
-    width='90%'
     gap='3rem'
     position='relative'
     zIndex='1'
+    sx={{width:{lg:'90%',xs:'100%'}}}
     >
       <Box
         display='flex'
         justifyContent='space-between'
         alignItems='center'
-        width='100%'
+        width='95%'
         >
         <ThemeProvider theme={headingTypo}>
           <Typography variant='h1'>Search properties for rent</Typography>
         </ThemeProvider>
-        <select name="cars" className='selector'>
-          <option value="" disabled selected>Search with Search Bar</option>
+        <select name="cars" className='filter-search-bar'>
+          <option value="" disabled={true}>Search with Search Bar</option>
           <option value="volvo">Volvo</option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
@@ -54,7 +54,9 @@ const MainWrapper = () => {
       <Box
       display='flex'
       flexWrap='wrap'
-      gap='7rem'
+      sx={{
+        gap:{lg:'5rem',md:'3rem',xs:'4rem'}
+      }}
       mt='5rem'
       justifyContent='center'>
         <House data={data}/>

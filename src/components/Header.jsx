@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ListIcon from '@mui/icons-material/List';
+import CloseIcon from '@mui/icons-material/Close';
+import NavButton from './NavButton';
 import { 
   Box,
   Typography,
-  Button,
   ThemeProvider 
 } from '@mui/material';
+
 import { 
   NavTypo,
   LogoTypo,
-  NavBtnTypo ,
-  NavBtnTypo2
-} from '../MaterialUI/typography'
+} from '../MaterialUI/typography';
+
+import MobileNav from './MobileNav';
 
 const Header = () => {
+
+  const [mobileNavOpen,setMobileNavOpen] = useState(false)
   return (
     <Box 
     maxWidth='1440px'
@@ -25,13 +30,15 @@ const Header = () => {
     top='0'
     >
       <Box
-      width='90%'
       margin='auto'
       height='100%'
       display='flex'
       justifyContent='space-between'
       alignItems='center'
       padding='0px 10px'
+      sx={{
+        width:{lg:'90%',md:'95%'}
+      }}
       >
         <Box>
           <ThemeProvider theme={LogoTypo}>
@@ -43,7 +50,10 @@ const Header = () => {
         justifyContent='space-between'
         alignItems='center'
         gap='3rem'
-        margin='0rem 0rem 0rem -30rem'>
+        className='nav-menu'
+        sx={{
+          marginRight:{lg:'30rem',md:'10rem'}
+        }}>
           <ul className='nav-links'>
             <li>rent</li>
             <li>buy</li>
@@ -55,17 +65,37 @@ const Header = () => {
         <Box
         display='flex'
         justifyContent='space-between'
+        className='nav-menu'
         alignItems='center'
         gap='2rem'>
-          <ThemeProvider theme={NavBtnTypo}>
-            <Button>login
-            </Button>
-           <ThemeProvider theme={NavBtnTypo2}>
-            <Button>sign up</Button>
-           </ThemeProvider>
-          </ThemeProvider>
+          <NavButton/>
         </Box>
+        {/* // */}
+        {
+          mobileNavOpen?
+          <CloseIcon 
+            sx={{
+              fontSize:'3.6rem', 
+              color:'var(--secondary-color)',
+              cursor:'pointer',
+              display:'none'
+            }}
+            className='menu-icon'
+            onClick={()=>setMobileNavOpen(false)}
+          />
+          :<ListIcon 
+          sx={{
+            fontSize:'3.6rem', 
+            color:'var(--secondary-color)',
+            cursor:'pointer',
+            display:'none'
+          }}
+          className='menu-icon'
+          onClick={()=>setMobileNavOpen(true)}
+        />
+        }
       </Box>
+      <MobileNav mobileNavOpen={mobileNavOpen}/>
     </Box>
   )
 }

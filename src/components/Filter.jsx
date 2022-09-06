@@ -17,19 +17,28 @@ import {
 const Filter = () => {
   return (
   <Box 
-  width='100%'
+  width='95%'
   display='flex'
   justifyContent='space-between'
-  alignItems='center'
-  padding='2rem 3rem'
   backgroundColor='white'
+  sx={{
+    padding:{md:'2rem 3rem',xs:'2rem 1rem'},
+    flexDirection:{sm:'row',xs:'column'},
+    alignItems:{sm:'center',xs:'flex-start'},
+    gap:{sm:'0rem',xs:'2rem'}
+  }}
   borderRadius='.4rem' >
     <Box
     display='flex'
     flexDirection='column'
     gap='.6rem'
     paddingRight='2rem'
-    borderRight='2px solid var(--form-text-color)'>
+    sx={{
+      borderBottom:{xs:'none',sm:'1px solid var(--text-color)'},
+      borderBottom:{sm:'none',xs:'1px solid var(--text-color)'},
+      marginLeft:{sm:'0rem',xs:'2.3rem'},
+      width:{sm:'auto',xs:'90%'}
+    }}>
       <ThemeProvider theme={filterTextTypo}>
         <Typography>Location</Typography>
         <Typography color='var(--secondary-color)'>New York,USA</Typography>
@@ -37,11 +46,7 @@ const Filter = () => {
     </Box>
     <form>
       <Box
-      display='flex'
-      flexDirection='column'
-      gap='.6rem'
-      paddingRight='2rem'
-      borderRight='2px solid var(--form-text-color)'>
+      className='filter-box'>
       <ThemeProvider theme={filterTextTypo}>
         <Typography>when</Typography>
         <Typography color='var(--secondary-color)'>select move-in date</Typography>
@@ -49,11 +54,7 @@ const Filter = () => {
       </Box>
       {/* // */}
       <Box 
-      display='flex'
-      flexDirection='column'
-      gap='.6rem'
-      paddingRight='2rem'
-      borderRight='2px solid var(--form-text-color)'
+      className='filter-box'
       >
         <label htmlFor="price">price</label>
         <select name="price" id="price">
@@ -64,11 +65,7 @@ const Filter = () => {
       </Box>
       {/* // */}
       <Box 
-      display='flex'
-      flexDirection='column'
-      gap='.6rem'
-      paddingRight='2rem'
-      borderRight='2px solid var(--form-text-color)'
+      className='filter-box'
       >
         <label htmlFor="property">property type</label>
         <select name="property" id="property">
@@ -77,9 +74,6 @@ const Filter = () => {
         </select>
       </Box>
       {/* // */}
-      <ThemeProvider theme={NavBtnTypo2}>
-        <Button>search</Button>
-      </ThemeProvider>
     </form>
   </Box>
   )

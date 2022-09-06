@@ -14,7 +14,6 @@ import {
 import {
   HouseTextTypo,
 } from '../MaterialUI/typography';
-// import { estateData } from '../data';
 
 const IconsArray = [SingleBedIcon,BathtubIcon,CompareArrowsIcon]
 
@@ -23,7 +22,9 @@ const House = ({data}) => {
     data.map((item,i)=>(
     <Box
     key={i}
-    width='320px'
+    sx={{
+      width:{lg:'320px',md:'280px',xs:'350px'}
+    }}
     borderRadius='.4rem'
     overflow='hidden'
     boxShadow='0px 0px 10px 0px rgb(216, 216, 216)'>
@@ -32,9 +33,12 @@ const House = ({data}) => {
         component='img'
         src={item.houseImg}
         width='100%'
-        height='200px'
+        sx={{
+          height:{sm:'200px',xs:'250px',}
+        }}
         objectFit='contain'
         alt='image'
+        boxShadow='0px 0px 10px 0px rgb(216, 216, 216)'
         />
       {/* // */}
       <Box
