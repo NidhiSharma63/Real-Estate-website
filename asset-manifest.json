@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/estate-website/static/css/main.b4c06889.css",
+    "main.js": "/estate-website/static/js/main.6b0fa310.js",
+    "static/media/house.avif": "/estate-website/static/media/house.f62ebb226d8cdd960a0c.avif",
+    "index.html": "/estate-website/index.html",
+    "main.b4c06889.css.map": "/estate-website/static/css/main.b4c06889.css.map",
+    "main.6b0fa310.js.map": "/estate-website/static/js/main.6b0fa310.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4c06889.css",
+    "static/js/main.6b0fa310.js"
+  ]
+}
