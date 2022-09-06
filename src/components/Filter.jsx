@@ -87,7 +87,7 @@ const Filter = ({setSearchData}) => {
       position='relative'
       gap='0rem'>
       <ThemeProvider theme={filterTextTypo}>
-        <Typography>when</Typography>
+        <Typography>when move-in</Typography>
         <Box 
         display='flex'
         width='100%'
