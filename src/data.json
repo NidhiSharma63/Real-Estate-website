@@ -6,63 +6,189 @@
     "price":790,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
   {
     "houseImg":"https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":500,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":590,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
   {
     "houseImg":"https://images.pexels.com/photos/8082322/pexels-photo-8082322.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":890,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"  },
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
+  },
   {
     "houseImg":"https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":590,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
   {
     "houseImg":"https://images.pexels.com/photos/12068702/pexels-photo-12068702.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":990,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":550,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
   {
     "houseImg":"https://images.pexels.com/photos/11213264/pexels-photo-11213264.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1000,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
   {
     "houseImg":"https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":580,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
   },
+  {
+    "houseImg":"https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":580,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"new york,USA"
+  },
+
+
+  {
+    "houseImg":"https://images.unsplash.com/photo-1529408632839-a54952c491e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmxhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":790,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmxhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":500,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":590,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1531383339897-f369f6422e40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZsYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "price":890,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "price":590,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "price":990,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "price":550,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXBhcnRtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1000,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":580,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":580,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"500-1000",
+    "Location":"paris,france"
+  },
+
+
+
 
 
   {
@@ -70,64 +196,167 @@
     "price":1190,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "price":1230,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1190,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1390,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg",
     "price":1430,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1500,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://thumbs.dreamstime.com/b/new-buildings-85221.jpg",
     "price":1200,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://thumbs.dreamstime.com/b/multi-storey-houses-rome-18361753.jpg",
     "price":1490,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1000-1500",
+     "Location":"paris,france"
   },
   {
     "houseImg":"https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1390,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1000-1500",
+    "Location":"paris,france"
   },
+
+
+  {
+    "houseImg":"https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1190,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1000-1500",
+   "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1533280385001-c32ffcbd52a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1230,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1190,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1430285561322-7808604715df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1390,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1533280385001-c32ffcbd52a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1430,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1000-1500",
+   "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1500,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1534595038511-9f219fe0c979?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1200,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1630699144641-72fa7a6b8aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1490,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1390,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1000-1500",
+    "Location":"new york,USA"
+  },
+
+
 
 
   {
@@ -135,14 +364,20 @@
     "price":1590,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1820,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
 
   {
@@ -150,48 +385,152 @@
     "price":1690,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1820,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/8039038/pexels-photo-8039038.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1890,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":1890,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/8045728/pexels-photo-8045728.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":2000,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"appartment"
+    "type":"appartment",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/463996/pexels-photo-463996.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":2000,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
   },
   {
     "houseImg":"https://images.pexels.com/photos/259593/pexels-photo-259593.jpeg?auto=compress&cs=tinysrgb&w=600",
     "price":2000,
     "info":[1,1,"5.7m²"],
     "desc":"2699 Green Valley Highland Lake,FL",
-    "type":"flat"
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"new york,USA"
+
+  },
+
+  
+  {
+    "houseImg":"https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":1190,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "price":1230,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":1190,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":1390,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg",
+    "price":1430,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":1500,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://thumbs.dreamstime.com/b/new-buildings-85221.jpg",
+    "price":1200,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://thumbs.dreamstime.com/b/multi-storey-houses-rome-18361753.jpg",
+    "price":1490,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"appartment",
+    "priceRange":"1500-2000",
+     "Location":"paris,france"
+  },
+  {
+    "houseImg":"https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price":1390,
+    "info":[1,1,"5.7m²"],
+    "desc":"2699 Green Valley Highland Lake,FL",
+    "type":"flat",
+    "priceRange":"1500-2000",
+    "Location":"paris,france"
   }
 ]

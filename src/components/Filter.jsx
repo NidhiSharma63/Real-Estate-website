@@ -1,18 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Calendar from 'react-calendar'
 
 import { 
   Box,
   Typography,
-  ThemeProvider 
+  ThemeProvider,
+  Button
 } from '@mui/material';
 
 import {
   filterTextTypo,
+  NavBtnTypo2
 } from '../MaterialUI/typography';
 
 
-const Filter = () => {
+const Filter = ({setSearchData}) => {
+
+  const [location,setLocation] = useState('new york,USA');
+  const [priceRange,setPriceRange] = useState('500-1000');
+  const [propertType,setPropertType] = useState('flat');
+
+  const getPrice = (e)=>{
+    setPriceRange(e.target.value)
+  }
+  const getPropertyType = (e) =>{
+    setPropertType(e.target.value);
+  }
+  const getLocation = (e) =>{
+    setLocation(e.target.value)
+  }
+
+  const handleData = (e) =>{
+    e.preventDefault();
+    setSearchData({
+      'location':location,
+      'priceRange':priceRange,
+      'propertyType':propertType
+    });
+  }
+
   return (
   <Box 
   width='95%'
@@ -26,13 +52,12 @@ const Filter = () => {
     gap:{sm:'0rem',xs:'2rem'}
   }}
   borderRadius='.4rem' >
-    <form>
+    <form onSubmit={handleData}>
       <Box className='filter-box'>
         <label htmlFor="location">Location</label>
-          <select name="location" id="location">
+          <select name="location" id="location" onChange={getLocation}>
             <option value="new york,USA">new york,USA</option>
-            <option value="paris,london">paris,london</option>
-            <option value="maharasjhk jkb">maharasjhk jkb</option>
+            <option value="paris,france">paris,France</option>
           </select>
         <label/>
       </Box>
@@ -47,22 +72,25 @@ const Filter = () => {
       <Box 
       className='filter-box'>
         <label htmlFor="price">price</label>
-        <select name="price" id="price">
-          <option value="$500-1000">$500-1000</option>
-          <option value="$1000-1500">$1000-1500</option>
-          <option value="$1500-2000">$1500-2000</option>
+        <select name="price" id="price" onChange={getPrice}>
+          <option value="500-1000">$500-1000</option>
+          <option value="1000-1500">$1000-1500</option>
+          <option value="1500-2000">$1500-2000</option>
         </select>
       </Box>
       {/* // */}
       <Box 
       className='filter-box'>
         <label htmlFor="property">property type</label>
-        <select name="property" id="property">
-          <option value="House">House</option>
-          <option value="Appartment">Appartment</option>
+        <select name="property" id="property" onChange={getPropertyType}>
+          <option value="flat">flat</option>
+          <option value="appartment">Appartment</option>
         </select>
       </Box>
       {/* // */}
+      <ThemeProvider theme={NavBtnTypo2}>
+        <Button type='submit'>search</Button>
+      </ThemeProvider>
     </form>
   </Box>
   )

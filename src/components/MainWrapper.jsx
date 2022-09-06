@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { 
   Box,
   Typography,
@@ -17,8 +17,27 @@ import {
 
 const MainWrapper = () => {
 
-  const [getSearchData,setSearchData] = useState({});
+  const [searchData,setSearchData] = useState({});
+  const [showData,setShowData] = useState(data);
 
+  useEffect(()=>{
+    setShowData(data);
+  },[]);
+
+
+  useEffect(()=>{
+    if(Object.keys(searchData).length<1) return;
+    
+    setShowData(()=>(
+      data.filter((item)=>(
+        item.priceRange===searchData.priceRange &&
+        item.type===searchData.propertyType &&
+        item.Location===searchData.location
+      ))
+    ));
+
+  },[searchData]);
+  
   return (
     <Box
     display='flex'
@@ -50,7 +69,7 @@ const MainWrapper = () => {
         </select>
         </Box>
       {/* top-section end */}
-        <Filter/>
+        <Filter setSearchData={setSearchData}/>
       {/* filter section end */}
       <Box
       display='flex'
@@ -60,7 +79,8 @@ const MainWrapper = () => {
       }}
       mt='5rem'
       justifyContent='center'>
-        <House data={data}/>
+        {/* {showData && console.log(showData.length)} */}
+       {<House data={showData}/>}
       </Box>
     </Box>
   )

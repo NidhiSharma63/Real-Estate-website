@@ -80,6 +80,7 @@ const House = ({data}) => {
                 palm harbor
               </Typography>
               <Typography fontSize='1.3rem' color='var(--text-color)'>{item.desc}</Typography>
+              <Typography fontSize='1.3rem'>{item.Location}</Typography>
             </ThemeProvider>
           </Box>
           <Box>
