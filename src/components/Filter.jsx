@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Calendar from 'react-calendar';
 import '../css/calendar.css';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -24,8 +24,6 @@ const Filter = ({setSearchData}) => {
 
   const [showCalender,setShowCalender] = useState(false);
 
-
-  console.log(date.toString().substring(0,15))
   const getPrice = (e)=>{
     setPriceRange(e.target.value)
   }
@@ -42,6 +40,16 @@ const Filter = ({setSearchData}) => {
   const handleDisplayCalendar = () =>{
     setShowCalender((prev)=>!prev)
   }
+
+  useEffect(()=>{
+    const body = document.querySelector('body')
+    body.addEventListener("click",(e)=>{
+      if(!e.target.classList.contains('calendar-dropdown')){
+        setShowCalender(false);
+      }
+    })
+  },[])
+
   const handleData = (e) =>{
     e.preventDefault();
     setSearchData({
@@ -79,10 +87,14 @@ const Filter = ({setSearchData}) => {
       gap='0rem'>
       <ThemeProvider theme={filterTextTypo}>
         <Typography>when</Typography>
-        <Box display='flex'>
+        <Box 
+        display='flex'
+        width='100%'
+        justifyContent='space-between'>
           <Typography color='var(--secondary-color)'>{date.toString().substring(0,15)}</Typography>
           <ArrowDropDownIcon
           onClick={handleDisplayCalendar}
+          className='calendar-dropdown'
           sx={{mt:'-3rem',fontSize:'3rem',alignSelf:'end',cursor:'pointer'}}
           />
         </Box>

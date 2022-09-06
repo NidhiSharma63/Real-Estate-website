@@ -119,7 +119,7 @@ form select:focus{
     flex-direction: column;
   }
 }
-@media screen and (max-width:615px) {
+@media screen and (max-width:730px) {
   form{
     flex-direction: column;
     align-items: flex-start;
