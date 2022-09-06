@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Real-state-website/static/css/main.5cbc189e.css",
-    "main.js": "/Real-state-website/static/js/main.0c52484d.js",
+    "main.css": "/Real-state-website/static/css/main.e8068cf0.css",
+    "main.js": "/Real-state-website/static/js/main.ca070f98.js",
     "index.html": "/Real-state-website/index.html",
-    "main.5cbc189e.css.map": "/Real-state-website/static/css/main.5cbc189e.css.map",
-    "main.0c52484d.js.map": "/Real-state-website/static/js/main.0c52484d.js.map"
+    "main.e8068cf0.css.map": "/Real-state-website/static/css/main.e8068cf0.css.map",
+    "main.ca070f98.js.map": "/Real-state-website/static/js/main.ca070f98.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cbc189e.css",
-    "static/js/main.0c52484d.js"
+    "static/css/main.e8068cf0.css",
+    "static/js/main.ca070f98.js"
   ]
 }
