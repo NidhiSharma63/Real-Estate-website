@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import Calendar from 'react-calendar';
 import '../css/calendar.css';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { 
   Box,
   Typography,
@@ -92,10 +92,10 @@ const Filter = ({setSearchData}) => {
         width='100%'
         justifyContent='space-between'>
           <Typography color='var(--secondary-color)'>{date.toString().substring(0,15)}</Typography>
-          <ArrowDropDownIcon
+          <KeyboardArrowDownIcon
           onClick={handleDisplayCalendar}
           className='calendar-dropdown'
-          sx={{mt:'-3rem',fontSize:'3rem',alignSelf:'end',cursor:'pointer'}}
+          sx={{mt:'-3rem',fontSize:'2rem',alignSelf:'end',cursor:'pointer'}}
           />
         </Box>
         {
