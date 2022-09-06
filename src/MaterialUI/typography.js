@@ -99,3 +99,36 @@ export const filterTextTypo = createTheme({
     }
   }
 });
+
+let HouseText = {
+  fontFamily: 'var(--ff-secondary)',
+  fontWeight: '600',
+  textTransform:'capitalize'
+}
+export const HouseTextTypo = createTheme({
+  components:{
+    MuiTypography:{
+      styleOverrides:{
+        root:{
+          ...HouseText,
+          fontSize: '1.6rem',
+          color: 'var(--secondary-color)',
+        }
+      }
+    }
+  }
+});
+
+export const HouseTextTypo2 = createTheme({
+  components:{
+    MuiTypography:{
+      styleOverrides:{
+        root:{
+          ...HouseText,
+          fontSize: '1rem',
+          color: 'rgba(58, 58, 57, 0.644)',
+        }
+      }
+    }
+  }
+});

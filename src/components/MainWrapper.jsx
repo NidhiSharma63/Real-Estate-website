@@ -5,7 +5,9 @@ import {
   Button,
   ThemeProvider 
 } from '@mui/material';
+
 import Filter from './Filter';
+import House from './House';
 
 import {
   headingTypo,
@@ -42,6 +44,7 @@ const MainWrapper = () => {
         </Box>
       {/* top-section end */}
       <Filter/>
+      <House/>
     </Box>
   )
 }
