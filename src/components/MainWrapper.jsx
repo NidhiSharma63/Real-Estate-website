@@ -5,21 +5,29 @@ import {
   Button,
   ThemeProvider 
 } from '@mui/material';
+import Filter from './Filter';
 
 import {
   headingTypo,
-} from '../MaterialUI/typography'
+} from '../MaterialUI/typography';
 
 const MainWrapper = () => {
   return (
     <Box
-      m='auto' 
-      mt="13rem"
-      width='90%'>
+    display='flex'
+    justifyContent='space-between'
+    alignItems='center'
+    flexDirection='column'
+    m='auto' 
+    mt="13rem"
+    width='90%'
+    gap='3rem'
+    >
       <Box
         display='flex'
         justifyContent='space-between'
         alignItems='center'
+        width='100%'
         >
         <ThemeProvider theme={headingTypo}>
           <Typography variant='h1'>Search properties for rent</Typography>
@@ -31,11 +39,9 @@ const MainWrapper = () => {
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
         </select>
-      </Box>
+        </Box>
       {/* top-section end */}
-      <Box>
-
-      </Box>
+      <Filter/>
     </Box>
   )
 }

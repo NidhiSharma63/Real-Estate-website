@@ -83,3 +83,19 @@ export const headingTypo = createTheme({
     }
   }
 });
+
+export const filterTextTypo = createTheme({
+  components:{
+    MuiTypography:{
+      styleOverrides:{
+        root:{
+          fontFamily: 'var(--ff-secondary)',
+          fontWeight: '600',
+          fontSize: '1.8rem',
+          color: 'rgba(58, 58, 57, 0.644)',
+          textTransform:''
+        }
+      }
+    }
+  }
+});

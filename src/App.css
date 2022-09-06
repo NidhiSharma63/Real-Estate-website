@@ -13,6 +13,7 @@ html{
   --bg-color:#f8f7fde5;
   --logo-color:#150e80;
   --secondary-color:rgb(22, 22, 22);
+  --form-text-color:rgba(58, 58, 57, 0.644);
 
   --ff-primary:'Merriweather', serif;
   --ff-secondary:'Work Sans', sans-serif;
@@ -40,4 +41,27 @@ body{
 .selector:focus{
   outline: none;
   border: 1px solid var(--primary-color);
+}
+
+form {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+form label,
+form select{
+  font-family: var(--ff-secondary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--form-text-color);
+  text-transform: capitalize;
+}
+
+form select{
+  border: none;
+  background-color: transparent;
+  color: var(--secondary-color);
 }
