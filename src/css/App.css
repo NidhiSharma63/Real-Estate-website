@@ -77,6 +77,11 @@ form select{
   color: var(--text-color);
   text-transform: capitalize;
 }
+form select option{
+  font-family: var(--ff-secondary);
+  color: var(--text-color);
+  text-transform: capitalize;
+}
 
 form select{
   cursor: pointer;

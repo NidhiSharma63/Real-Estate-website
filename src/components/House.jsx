@@ -94,6 +94,14 @@ const House = ({data}) => {
             style={{color:'var(--text-color)'}}
             onClick={(e)=>changeFavIconColor(e)}
             />
+            <Typography
+            mt='1rem'
+            backgroundColor={item.Available?'green':'red'}
+            padding='.3rem'
+            color='white'
+            borderRadius='.5rem'>
+              {item.Available?'Available':'Booked'}
+            </Typography>
           </Box>
         </Box>
         <Box
